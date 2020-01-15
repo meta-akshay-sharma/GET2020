@@ -105,6 +105,10 @@ class Cart {
 			System.out.println("\nInvalid Input");
 			System.exit(0);
 		}
+		if(priceCopy <= 0)
+		{
+			System.out.println("\nYou Entered Invalid Details \n Your Entry is Not Added in the Record !!!!!");
+		}
 		//price.add(input.nextInt());
 		try{
 			System.out.println("\nEnter the Maximum Quantity : ");
@@ -115,7 +119,7 @@ class Cart {
 			System.out.println("\nInvalid Input");
 			System.exit(0);
 		}
-		if(priceCopy == 0 || maxQuantity ==0)
+		if(priceCopy<=0 || maxQuantity <=0)
 		{
 			System.out.println("\nYou Entered Invalid Details \n Your Entry is Not Added in the Record !!!!!");
 		}
