@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+
+function checkEmail() {
+	var email = document.getElementById("studentEmail").value;
+	if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))) {
+		alert("Enter Currect Email !!!");
+		return (false);
+	}
+	else
+		return true;
+}
+
+function checkAge() {
+	var age = document.getElementById("age").value;
+	if (age < 1 || age > 60) {
+		alert("Enter Valid Age !!!");
+		return false;
+	}
+	else
+		return true;
+}
+
+function check() {
+	if (checkEmail() && checkAge()) {
+		return true;
+	}
+	else
+		return false;
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Fill The Details In the Form</h1>
+	<div id="validationMessage"></div>
+	<form id="register" method="get" action="add" onsubmit="return check()">
+
+		<table align="center" border="2px" cellspacing="15">
+			<tr>
+				<td><label><b>First Name</b></label><br></td>
+				<td><input id="firstName" type="text" placeholder="Enter First Name" name="firstName" required><br></td>
+			</tr>
+			<tr>
+				<td><label><b>Last Name</b></label><br></td>
+				<td><input id="lastName" type="text"
+					placeholder="Enter Last Name" name="lastName" required><br></td>
+			</tr>
+			<tr>
+				<td><label><b>Father's Name</b></label><br></td>
+				<td><input id="fatherName" type="text"
+					placeholder="Enter Father's Name" name="fatherName" required><br></td>
+			</tr>
+			<tr>
+				<td><label><b>Email</b></label><br></td>
+				<td><input id="studentEmail" type="email" 
+					placeholder="Enter Email id" name="studentEmail" required><br></td>
+			</tr>
+			<tr>
+				<td><label><b>Class</b></label><br></td>
+		<!--		<td><input id="class" type="Number" placeholder="Enter Class"
+					name="class" required><br></td>
+					-->
+					<td><select id="class" name="class">
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                        <option value=10>10</option>
+                        <option value=11>11</option>
+                        <option value=12>12</option>
+                    </select></td>
+			</tr>
+			<tr>
+				<td><label><b>Age</b></label><br></td>
+				<td><input id="age" type="Number" placeholder="Enter Age"
+					name="age" required><br></td>
+			</tr>
+			<tr>
+				<td><label><input type="submit"></label></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
