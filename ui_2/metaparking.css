@@ -1,0 +1,155 @@
+/* 
+
+/* Change the link color to #111 (black) on hover */
+
+
+/*li a:hover {
+    background-color: #f52f11;
+}
+
+div {
+    border-radius: 5px;
+    background-color: grey;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+input {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#gender {
+    padding: 0;
+    margin: 0;
+}
+*/
+
+label {
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #737f91;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #6eed47;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* input {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+input[type="text"],
+input[ type="email"],
+input[ type="password"] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+li a:hover {
+    background-color: #f52f11;
+}
+
+h1,
+h2 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: green;
+    text-align: center;
+}
+
+#parkingImage {
+    width: 100%;
+}
+
+#addEmployee,
+#addVehicle,
+#pricing,
+#giveFeedback {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid green;
+}
+
+.formA {
+    width: 300px;
+    height: 30px;
+}
+
+.formB {
+    width: 300px;
+    height: 50px;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    background-color: green;
+    width: 200px;
+    height: 35px;
+    border-radius: 12px;
+}
+
+.dropdownA {
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+}
+
+#formC {
+    border-radius: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    border: 5px solid grey;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formB2 {
+    width: 300px;
+    height: 300px;
+}
