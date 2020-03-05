@@ -1,0 +1,285 @@
+body {
+    margin: unset;
+}
+
+#home {
+    background-image: url('homebg.png');
+    background-size: 100% 100%;
+}
+
+#phoneImage {
+    margin-bottom: 30%;
+}
+
+#body {
+    background-image: url('bodybg.png');
+    background-size: 100% 100%;
+}
+
+
+/* 
+aside {
+    margin-right: 100px;
+} */
+
+#nav,
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+a,
+i {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+h2 {
+    display: flex;
+    font-family: monospace;
+    color: white;
+    font-size: 40px;
+    flex-wrap: nowrap;
+    width: 60%;
+    margin-left: 50px;
+}
+
+.download {
+    background-color: #ff5c33;
+    border: none;
+    color: white;
+    font-family: monospace;
+    margin-left: 50px;
+    margin-right: 5px;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+#features {
+    background-color: #0040ff;
+    border: none;
+    color: white;
+    font-family: monospace;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+#content {
+    margin-top: 60px;
+}
+
+#mainHeading {
+    font-weight: bold;
+    font-size: 40px;
+    color: blue;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 0;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+}
+
+#subHeadingHeader {
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+
+#subHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    align-items: center;
+    text-align: start;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: rgb(211, 208, 208);
+    text-align: justify;
+}
+
+#subHeadingContent p {
+    text-align: left;
+}
+
+#subHeadingContent {
+    margin-right: 50px;
+}
+
+#testImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
+}
+
+#cloud {
+    display: flex;
+    flex-direction: row;
+}
+
+#cloud img {
+    padding-top: 150px;
+    padding-left: 300px;
+}
+
+#cloud aside img {
+    padding-top: 200px;
+    padding-left: 80px;
+}
+
+#cloud aside header {
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    font-family: monospace;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 80px;
+    font-weight: bold;
+}
+
+#cloud aside p {
+    text-align: left;
+    color: #948d8d;
+    font-size: 20px;
+    font-family: monospace;
+    padding-left: 80px;
+}
+
+#sun {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+
+#sun aside img {
+    padding-top: 80px;
+    padding-left: 200px;
+}
+
+#sun aside header {
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    font-family: monospace;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 200px;
+    font-weight: bold;
+}
+
+#sun aside p {
+    text-align: left;
+    color: #948d8d;
+    font-size: 20px;
+    text-align: start;
+    font-family: monospace;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#cloud img {
+    padding-top: 50px;
+}
+
+#reviews header {
+    font-weight: bold;
+    font-size: 35px;
+    color: blue;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#comment {
+    color: #4f4b4b;
+    font-size: 20px;
+    text-align: start;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#author {
+    color: #4f4b4b;
+    font-size: 15px;
+    text-align: start;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#commentLineOne,
+#commentLineTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 300px;
+    padding-left: 350px;
+    padding-top: 75px;
+}
+
+#commentLineOne section,
+#commentLineTwo section {
+    padding-right: 80px;
+}
+
+.setWidth {
+    width: 400px;
+}
+
+#download {
+    background-color: #5d99e3;
+}
+
+#download header {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    padding-left: 150px;
+    padding-top: 100px;
+}
+
+#appDownloadButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#download p {
+    text-align: left;
+    color: white;
+    width: 50%;
+    font-size: 15px;
+    font-family: monospace;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 200px;
+}
+
+#download section {
+    padding-top: 15px;
+}
+
+#appStoreImage {
+    padding-left: 150px;
+    padding-right: 10px;
+}
