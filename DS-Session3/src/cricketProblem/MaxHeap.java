@@ -1,0 +1,87 @@
+package cricketProblem;
+
+public class MaxHeap {
+	public static int size = -1;
+	public static int maxSize = 10;
+	public static Heap[] heap = new Heap[maxSize];
+	
+	private static int parent(int current) {
+		return current/2;
+	}
+	
+	private static void swap(int current, int parent) {
+		Heap temp;
+		temp = heap[current];
+		heap[current] = heap[parent];
+		heap[parent] = temp;
+	}
+	
+	private static void insert(int data) {
+		if (size == -1){
+			Heap newHeap = new Heap(data, -1);
+			heap[++size] = newHeap;
+		}
+		else{
+			Heap newHeap = new Heap(data, ++size);
+			heap[size] = newHeap;
+			int current = size;
+			while (heap[current].ball > heap[parent(current)].ball){
+				swap(current, parent(current));
+				current = parent(current);
+			}
+		}
+	}
+
+	private static void matchOn() {
+		while (size != 0){
+			heap[1].ball -= 1;
+			System.out.println("->bowler " +heap[1].bowler +" Throws The Ball And remaining ball " +heap[1].ball);
+			if (heap[1].ball == 0)
+				extract();
+			heapify(1);
+		}
+	}
+	
+	private static void extract() {
+		heap[1] = heap[size--];
+	}
+
+	private static void heapify(int pos) {
+		if (isLeaf(pos))
+			return;
+		
+		if ((heap[pos].ball < heap[leftChild(pos)].ball) || (heap[pos].ball < heap[rightChild(pos)].ball)){
+			if (heap[leftChild(pos)].ball > heap[rightChild(pos)].ball){				
+				swap(pos, leftChild(pos));
+				heapify(leftChild(pos));
+			}
+			else{
+				swap(pos, rightChild(pos));
+				heapify(rightChild(pos));
+			}
+		}
+	}
+
+	private static int rightChild(int pos) {
+		return pos*2+1;
+	}
+
+	private static int leftChild(int pos) {
+		return pos*2;
+	}
+
+	private static boolean isLeaf(int pos) {
+		if (pos >= (size+1)/2 && pos <= size)
+			return true;
+		return false;
+	}
+
+	public static void main(String[] args){
+		insert(Integer.MAX_VALUE);
+		insert(5);
+		insert(6);
+		insert(7);
+		matchOn();
+	}
+	
+}
